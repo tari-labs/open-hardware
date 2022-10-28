@@ -1,6 +1,6 @@
 # Running Tari on Open Hardware platforms
 
-[<img src="img/tari-base-node.png" width="600" />]
+<img src="img/open-hardware-devices01.jpg" width="600" />
 
 [Tari](https://tari.com) is a digital assets focused blockchain protocol that is built in Rust, private by default, and is being architected as a merge-mined sidechain with [Monero](https://monero.org). In a world without default privacy, businesses cannot operate, our personal preferences and histories are sold to the highest bidder, and we lose the ability to conduct our lives in the manner we choose. The Tari community fundamentally believes that privacy-enhancing software should be pervasive and available to all.
 
@@ -23,7 +23,7 @@ _We are currently planning to run Tari on these platforms._
 * [Precursor](risc-v/Precursor.md) (risc64)
 * [PINE64 Star64](risc-v/Star64.md) (risc64)
 
-[<img src="img/open-hardware-devices01.jpg" width="600" />]
+<img src="img/tari-base-node.png" width="300" />
 
 ## Licensing
 
