@@ -15,7 +15,6 @@ This repository is one aspect of the Tari project's dedication to FOSS and Open 
 Tari currently runs on a variety of popular platforms such as [Raspberry Pi](https://www.raspberrypi.com) and the [Open Source Hardware](https://www.oshwa.org/definition/) (OSHW) approved [Beaglebone](https://beagleboard.org/bone). It also runs on hardware certified by the Free Software Foundation (FSF) as [Respects Your Freedom](https://ryf.fsf.org) (RYF).
 
 ## Hardware 
-<img src="img/tari-base-node.png" width="300" style="float:right;text-align:right;padding:12px;" />
 _These platforms are listed in order of known stability running Tari._
 
 * [RYF Thinkpad T500](fsf-ryf/Thinkpad-T500.md) (x86_64)
@@ -28,7 +27,7 @@ _We are currently planning to run Tari on these platforms._
 * [Precursor](risc-v/Precursor.md) (risc64)
 * [PINE64 Star64](risc-v/Star64.md) (risc64)
 
-
+<img src="img/tari-base-node.png" width="600" style="float:right;text-align:right;padding:12px;" />
 
 ## Licensing
 
