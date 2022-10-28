@@ -31,4 +31,4 @@ _We are currently planning to run Tari on these platforms._
 
 ## Licensing
 
-These materials are ethical Free and Open Source Software (FOSS). Any and all original work contained in this repository is copyright &cop; 2022 Tari Labs and released under the BSD 3-Clause License. See [LICENSE](LICENSE) for more information.
+These materials are ethical Free and Open Source Software (FOSS). Any and all original work contained in this repository is copyright &copy; 2022 Tari Labs and released under the BSD 3-Clause License. See [LICENSE](LICENSE) for more information.
