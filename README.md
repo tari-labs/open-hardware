@@ -1,6 +1,6 @@
 # Running Tari on Open Hardware platforms
 
-<img src="img/open-hardware-devices01.jpg" width="600" />
+<img src="img/tari-console-wallet01.png" width="600" />
 
 [Tari](https://tari.com) is a digital assets focused blockchain protocol that is built in Rust, private by default, and is being architected as a merge-mined sidechain with [Monero](https://monero.org). In a world without default privacy, businesses cannot operate, our personal preferences and histories are sold to the highest bidder, and we lose the ability to conduct our lives in the manner we choose. The Tari community fundamentally believes that privacy-enhancing software should be pervasive and available to all.
 
@@ -8,9 +8,14 @@ The Tari project releases its code as Free and Open Source Software (FOSS) and i
 
 This repository is one aspect of the Tari project's dedication to FOSS and Open Hardware platforms. We will provide documentation and guidance here that will be useful for users who intend to run Tari on Open Hardware. Additionally, we will post updates here about Tari proof-of-concepts, testing, and compatibility with hardware such as single-board computers.
 
+<img src="img/open-hardware-devices01.jpg" width="600" />
+
+## Current
+
 Tari currently runs on a variety of popular platforms such as [Raspberry Pi](https://www.raspberrypi.com) and the [Open Source Hardware](https://www.oshwa.org/definition/) (OSHW) approved [Beaglebone](https://beagleboard.org/bone). It also runs on hardware certified by the Free Software Foundation (FSF) as [Respects Your Freedom](https://ryf.fsf.org) (RYF).
 
 ## Hardware 
+<img src="img/tari-base-node.png" width="300" style="float:right;text-align:right;padding:12px;" />
 _These platforms are listed in order of known stability running Tari._
 
 * [RYF Thinkpad T500](fsf-ryf/Thinkpad-T500.md) (x86_64)
@@ -23,7 +28,7 @@ _We are currently planning to run Tari on these platforms._
 * [Precursor](risc-v/Precursor.md) (risc64)
 * [PINE64 Star64](risc-v/Star64.md) (risc64)
 
-<img src="img/tari-base-node.png" width="300" />
+
 
 ## Licensing
 
