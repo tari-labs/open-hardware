@@ -24,8 +24,8 @@ _These platforms are listed in order of known stability running Tari._
 _We are currently planning to run Tari on these platforms._
 * [Raspberry Pi 3](raspberry-pi/Raspberry-Pi-3.md) (armhf)
 * [BeagleBone AI](beaglebone/BeagleBone-AI.md) (armhf)
-* [Precursor](risc-v/Precursor.md) (risc64)
-* [PINE64 Star64](risc-v/Star64.md) (risc64)
+* [Precursor](risc-v/Precursor.md) (riscv64)
+* [PINE64 Star64](risc-v/Star64.md) (riscv64)
 
 <img src="img/tari-base-node.png" width="600" style="float:right;text-align:right;padding:12px;" />
 
