@@ -10,9 +10,9 @@ This repository is one aspect of the Tari project's dedication to FOSS and Open 
 
 <img src="img/open-hardware-devices01.jpg" width="600" />
 
-## Current
+## Current Progress
 
-Tari currently runs on a variety of popular platforms such as [Raspberry Pi](https://www.raspberrypi.com) and the [Open Source Hardware](https://www.oshwa.org/definition/) (OSHW) approved [Beaglebone](https://beagleboard.org/bone). It also runs on hardware certified by the Free Software Foundation (FSF) as [Respects Your Freedom](https://ryf.fsf.org) (RYF).
+Tari currently runs on a variety of popular platforms such as [Raspberry Pi](https://www.raspberrypi.com) and the [Open Source Hardware](https://www.oshwa.org/definition/) (OSHW) certified [BeagleBone](https://beagleboard.org/bone). It also runs on hardware certified by the Free Software Foundation (FSF) as [Respects Your Freedom](https://ryf.fsf.org) (RYF).
 
 ## Hardware 
 _These platforms are listed in order of known stability running Tari._
