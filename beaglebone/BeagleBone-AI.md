@@ -12,7 +12,7 @@ BeagleBoard AI models are [certified Open Source Hardware](https://certification
 
 <img src="docs_ai-64/beaglebone-ai-64-overview.jpg" width="600" />
 
-[BeagleBone AI](https://beagleboard.org/ai) is a miniature single-board computer (SBC) based on the Texas Instruments AM5729. The board is compatible with the BeagleBone Black header and most cape accessories. BeagleBone  AI also has an SoC with TI C66x digital-signal-processor (DSP) and embedded-vision-engine (EVE) cores supported through an optimized TIDL machine learning OpenCL API with pre-installed tools.
+[BeagleBone AI-64](https://beagleboard.org/ai-64) is a single-board computer (SBC) that provides a complete system with development tools for AI/ML. It utilizes the 64-bit Texas Instruments AM5729 SoC and can be expanded with the BeagleBone cape headers, via hundreds of open-source hardware examples and dozens of CoTS expansion options.
 
 ### Hardware
 * **SoC:** Texas Instruments Jacinto TDA4VM, 2x ARM Cortex-A72
@@ -44,7 +44,7 @@ The hardware community around all BeagleBone models is very active on the [Beagl
 
 #### Bootloader
 
-BeagleBone models use the [U-Boot](https://www.denx.de/wiki/U-Boot) bootloader. Software images for 
+BeagleBone models use the [U-Boot](https://www.denx.de/wiki/U-Boot) bootloader.
 
 #### Operating System
 
@@ -60,7 +60,7 @@ The Tari suite `arm64` builds for [Ubuntu](https://ubuntu.com) will run on the B
 
 Some Debian dependencies must be installed:
 * [Tor](https://www.linuxcapable.com/how-to-install-tor-browser-on-debian-11-bullseye/) must be installed and the [control port 9051](https://manpages.debian.org/testing/tor/torrc.5.en.html) will need to be open and configured in `/etc/tor/torrc`.
-* [unzip](https://packages.debian.org/stretch/unzip)
+* [unzip](https://packages.debian.org/stretch/unzip) is required to extract the Tari binaries.
 * _NOTE_ The Tari suite `start_all` script requires the [GNOME](https://www.gnome.org) desktop environment. This DE is not recommended on this device so the script should be ignored or modified for XFCE.
 
 Instructions: 
@@ -128,7 +128,7 @@ Instructions for compiling from source are available in the [Tari project reposi
 
 Some Debian dependencies also must to be installed: 
 * [Tor](https://www.linuxcapable.com/how-to-install-tor-browser-on-debian-11-bullseye/) must be installed and the [control port 9051](https://manpages.debian.org/testing/tor/torrc.5.en.html) will need to be open and configured in `/etc/tor/torrc`.
-* [unzip](https://packages.debian.org/stretch/unzip)
+* [unzip](https://packages.debian.org/stretch/unzip) is required to extract the Tari binaries.
 * _NOTE_: The Tari suite `start_all` script requires the [GNOME](https://www.gnome.org) desktop environment. A GUI is not recommended on this device so the script should be ignored.
 
 <img src="docs_ai/reva1-top.svg" width="800" />
