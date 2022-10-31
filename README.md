@@ -8,6 +8,8 @@ The Tari project releases its code as Free and Open Source Software (FOSS) and i
 
 This repository is one aspect of the Tari project's dedication to FOSS and Open Hardware platforms. We will provide documentation and guidance here that will be useful for users who intend to run Tari on Open Hardware. Additionally, we will post updates here about Tari proof-of-concepts, testing, and compatibility with hardware such as single-board computers.
 
+**This information is published as a community resource, and the Tari project does not provide hardware support or dedicated help for any of these platforms. We are providing information to be utilized as a community resource.**
+
 <img src="img/open-hardware-devices01.jpg" width="600" />
 
 ## Current Progress
@@ -15,7 +17,7 @@ This repository is one aspect of the Tari project's dedication to FOSS and Open 
 Tari currently runs on a variety of popular platforms such as [Raspberry Pi](https://www.raspberrypi.com) and the [Open Source Hardware](https://www.oshwa.org/definition/) (OSHW) certified [BeagleBone](https://beagleboard.org/bone). It also runs on hardware certified by the Free Software Foundation (FSF) as [Respects Your Freedom](https://ryf.fsf.org) (RYF).
 
 ## Hardware
-**NOTE:** The Tari project does not provide hardware support or dedicated help for any of these platforms. We are providing information here as a community resource.
+**NOTE:** The Tari project does not provide hardware support or dedicated help for any of these platforms. We are publishing information here as a community resource.
 
 _These platforms are listed in order of known stability running Tari._
 
