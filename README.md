@@ -17,15 +17,15 @@ Tari currently runs on a variety of popular platforms such as [Raspberry Pi](htt
 ## Hardware 
 _These platforms are listed in order of known stability running Tari._
 
-* [RYF Thinkpad T500](fsf-ryf/Thinkpad-T500.md) (x86_64)
-* [Raspberry Pi 4](raspberry-pi/Raspberry-Pi-4.md) (arm64)
-* [BeagleBone AI-64](beaglebone/BeagleBone-AI.md) (arm64)
+* [RYF Thinkpad T500](fsf-ryf/FSF-RYF.md) (x86_64)
+* [Raspberry Pi 4 B](raspberry-pi/Raspberry-Pi.md) (arm64)
+* [BeagleBone AI-64](beaglebone/BeagleBone.md) (arm64)
 
 _We are currently planning to run Tari on these platforms._
-* [Raspberry Pi 3](raspberry-pi/Raspberry-Pi-3.md) (armhf)
-* [BeagleBone AI](beaglebone/BeagleBone-AI.md) (armhf)
-* [Precursor](risc-v/Precursor.md) (riscv64)
-* [PINE64 Star64](risc-v/Star64.md) (riscv64)
+* [Raspberry Pi 3 B+](raspberry-pi/Raspberry-Pi.md) (armhf)
+* [BeagleBone AI](beaglebone/BeagleBone.md) (armhf)
+* [Precursor](risc-v/RISC-V.md) (riscv64)
+* [PINE64 Star64](risc-v/RISC-V.md) (riscv64)
 
 <img src="img/tari-base-node.png" width="600" style="float:right;text-align:right;padding:12px;" />
 
