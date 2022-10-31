@@ -82,7 +82,7 @@ Additional installation instructions are available in the [Tari project reposito
 
 [BeagleBone AI](https://beagleboard.org/ai) is a miniature single-board computer (SBC) based on the Texas Instruments AM5729. The board is compatible with the BeagleBone Black header and most cape accessories. BeagleBone  AI also has an SoC with TI C66x digital-signal-processor (DSP) and embedded-vision-engine (EVE) cores supported through an optimized TIDL machine learning OpenCL API with pre-installed tools.
 
-### Hardware Specifications
+### Hardware
 * **SoC	:**	Texas Instruments Sitara AM5729, 2x ARM Cortex-A15
 * **Max CPU clock:** 1.5 GHz
 * **Co-processors:** 2xC66x, 4xPRU, 4xARM Cortex-M4, 4xEVE, 2xPowerVR SGX544, IVA-HD
