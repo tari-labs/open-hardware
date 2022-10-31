@@ -1,6 +1,6 @@
 # BeagleBoard.org BeagleBone AI Devices
 
-<img src="img/beagleboard-ai02.jpg" width="600" />
+<img src="img/beaglebone-ai02.jpg" width="600" />
 
 BeagleBoard AI models are [certified Open Source Hardware](https://certification.oshwa.org/us000169.html) (OSHW). There are two available models of the [BeagleBone AI](https://beagleboard.org/ai): 
 
