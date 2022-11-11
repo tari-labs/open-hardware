@@ -16,6 +16,8 @@ This repository is one aspect of the Tari project's dedication to FOSS and Open 
 
 Tari currently runs on a variety of popular platforms such as [Raspberry Pi](https://www.raspberrypi.com) and the [Open Source Hardware](https://www.oshwa.org/definition/) (OSHW) certified [BeagleBone](https://beagleboard.org/bone). It also runs on hardware certified by the Free Software Foundation (FSF) as [Respects Your Freedom](https://ryf.fsf.org) (RYF).
 
+* **Latest update:** Nov. 11, 2022 - Tari base node is known to run on [Raspberry Pi 4 B](raspberry-pi/Raspberry-Pi.md), [BeagleBone AI-64](beaglebone/BeagleBone.md), [RYF Thinkpad T500](fsf-ryf/FSF-RYF.md). Testing has begun for RISC-V architecture on [Precursor](risc-v/RISC-V.md).
+
 ## Hardware
 **NOTE:** The Tari project does not provide hardware support or dedicated help for any of these platforms. We are publishing information here as a community resource.
 
