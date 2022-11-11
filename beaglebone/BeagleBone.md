@@ -120,6 +120,11 @@ BeagleBone models run a [Debian GNU/Linux](https://debian.org) derivative. Instr
 
 The system starts a Web configuration interface when it boots. The easiest way to access it is by [connecting the device](https://docs.beagleboard.org/latest/boards/beaglebone/ai/ch03.html) via USB-C, opening a Web browser, and following the [instructions here](https://beagleboard.org/getting-started#step3).
 
+When you connect to the device, you will be presented with the on-board filesystem as in the screenshot below.  Open `START.htm` in your browser to view instructions for updating the firmware, updating Debian, and other maintenance of the device.
+
+<img src="docs_ai-64/beaglebone-filesystem.png" width="600" />
+
+
 #### Tari Testing &amp; Compatibility
 
 The Tari project does not provide builds for the `armhf` architecture, so the Tari suite must be compiled from source on the BeagleBoard AI.
