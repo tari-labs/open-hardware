@@ -67,7 +67,7 @@ The hardware community around Raspberry Pi is huge and very active all over the 
 
 #### Bootloader
 
-The Raspberry Pi 3 [bootloader](https://pimylifeup.com/raspberry-pi-bootloader/) is loaded via a `bootcode.bin` file on the boot filesystem (SD card).
+The Raspberry Pi 3 [bootloader](https://pimylifeup.com/raspberry-pi-bootloader/) is loaded via a `bootcode.bin` file on the boot filesystem (microSD card).
 
 #### Operating System
 

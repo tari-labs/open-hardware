@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style type="text/css">
+td, th { border: 1px solid #c3c3c3; padding: 0 3px 0 3px; }
+table { border-collapse: collapse; }
+img { max-width: 100%; }
+</style>
+<meta name="generator" content="ReText 7.2.3">
+<title>Raspberry-Pi</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+<h1>Raspberry Pi Devices</h1>
+<p><img src="img/raspberry-pi01.jpg" width="600" /></p>
+<p>Raspberry Pi models are the most popular <a href="https://opensource.com/resources/raspberry-pi">Open Source</a> mini-computers in the world and are used by amateur hobbyists and hackers as well as industry professionals in a variety of IoT capacities. They are designed by the <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html">Raspberry Pi Foundation</a>. Two targets are of interest to Tari due to their widespread deployment: </p>
+<ul>
+<li>
+<p><strong>Raspberry Pi 4 B:</strong> This single-board computer has a 64-bit ARM chipset (<a href="https://wiki.debian.org/Arm64Port">arm64</a> architecture).</p>
+</li>
+<li>
+<p><strong>Raspberry Pi 3 B+:</strong> This single-board computer has a 32-bit ARM hard-float chipset (ARMv7 <a href="https://wiki.debian.org/ArmHardFloatPort">armhf</a> architecture).</p>
+</li>
+</ul>
+<h2>Raspberry Pi 4 B</h2>
+<p><img src="img/raspberry-pi-4-01.jpg" width="600" /></p>
+<h3>Documentation</h3>
+<h4>Vendor</h4>
+<p>The Raspberry Pi Foundation publishes a detailed <a href="https://github.com/raspberrypi/documentation">git repository</a> with most hardware design files as well as a documentation <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html">wiki</a>.</p>
+<h4>Community</h4>
+<p>The hardware community around Raspberry Pi is huge and very active all over the Web, such as in the  <a href="https://forums.raspberrypi.com/">Raspberry Pi Foundation forums</a>.</p>
+<h3>Software</h3>
+<h4>Bootloader</h4>
+<p>The Raspberry Pi 4 <a href="https://pimylifeup.com/raspberry-pi-bootloader/">bootloader</a> is loaded via EEPROM.</p>
+<h4>Operating System</h4>
+<p>Raspberry Pi models ship with a <a href="https://debian.org">Debian GNU/Linux</a> derivative called <a href="https://raspbian.org">Raspbian</a> via the <a href="https://www.raspberrypi.com/software/">NOOBS installer</a>. Instructions for flashing and updating the OS <a href="https://thepi.io/how-to-install-noobs-on-the-raspberry-pi/">are available here</a>.</p>
+<h4>Connecting to the Device</h4>
+<p>The system starts the Raspbian <a href="https://lxde.org">LXDE</a> desktop environment when it boots. The easiest way to access it is <a href="https://www.raspberrypi.com/documentation/computers/getting-started.html#connecting-a-display">connecting to a display</a> or via <a href="https://www.raspberrypi.com/documentation/computers/remote-access.html#introduction-to-remote-access">the network</a>.</p>
+<h4>Tari Testing &amp; Compatibility</h4>
+<p>The Tari suite <code>arm64</code> builds for <a href="https://ubuntu.com">Ubuntu</a> will run on the Raspberry Pi 4 B with Raspbian.</p>
+<p>Some Debian dependencies must be installed:
+* <a href="https://www.linuxcapable.com/how-to-install-tor-browser-on-debian-11-bullseye/">Tor</a> must be installed and the <a href="https://manpages.debian.org/testing/tor/torrc.5.en.html">control port 9051</a> will need to be open and configured in <code>/etc/tor/torrc</code>.
+* <em>NOTE</em> The Tari suite <code>start_all</code> script requires the <a href="https://www.gnome.org">GNOME</a> desktop environment. This DE is not recommended on this device so the script should be ignored or modified for Raspbian.</p>
+<p>Instructions: 
+* Download the <code>arm64</code> build of <code>tari_suite</code> from the <a href="https://www.tari.com/downloads/">Tari downloads page</a>.
+* Verify the SHA256 checksum for the file.
+* Copy the ZIP archive to the device and extract the files with <code>unzip</code>.
+* Change the permissions on the Tari binaries to be executable.
+* Run the Tari binaries via the CLI.</p>
+<p>Additional installation instructions are available in the <a href="https://github.com/tari-project/tari/blob/development/README.md">Tari project repositories</a>.</p>
+<h2>Raspberry Pi 3 B+</h2>
+<p><img src="img/raspberry-pi-3b-01.jpg" width="600" /></p>
+<h3>Documentation</h3>
+<h4>Vendor</h4>
+<p>The Raspberry Pi Foundation publishes a detailed <a href="https://github.com/raspberrypi/documentation">git repository</a> with most hardware design files as well as a documentation <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html">wiki</a>.</p>
+<h4>Community</h4>
+<p>The hardware community around Raspberry Pi is huge and very active all over the Web, such as in the  <a href="https://forums.raspberrypi.com/">Raspberry Pi Foundation forums</a>.</p>
+<h3>Software</h3>
+<h4>Bootloader</h4>
+<p>The Raspberry Pi 3 <a href="https://pimylifeup.com/raspberry-pi-bootloader/">bootloader</a> is loaded via a <code>bootcode.bin</code> file on the boot filesystem (microSD card).</p>
+<h4>Operating System</h4>
+<p>Raspberry Pi models ship with a <a href="https://debian.org">Debian GNU/Linux</a> derivative called <a href="https://raspbian.org">Raspbian</a> via the <a href="https://www.raspberrypi.com/software/">NOOBS installer</a>. Instructions for flashing and updating the OS <a href="https://thepi.io/how-to-install-noobs-on-the-raspberry-pi/">are available here</a>.</p>
+<h4>Connecting to the Device</h4>
+<p>The system starts the Raspbian <a href="https://lxde.org">LXDE</a> desktop environment when it boots. The easiest way to access it is <a href="https://www.raspberrypi.com/documentation/computers/getting-started.html#connecting-a-display">connecting to a display</a> or via <a href="https://www.raspberrypi.com/documentation/computers/remote-access.html#introduction-to-remote-access">the network</a>.</p>
+<h4>Tari Testing &amp; Compatibility</h4>
+<p>The Tari project does not provide builds for the <code>armhf</code> architecture, so the Tari suite must be compiled from source on the Raspberry Pi 3.</p>
+<p>Instructions for compiling from source are available in the <a href="https://github.com/tari-project/tari/blob/development/README.md">Tari project repositories</a>.</p>
+<p>Some Debian dependencies also must to be installed: 
+* <a href="https://www.linuxcapable.com/how-to-install-tor-browser-on-debian-11-bullseye/">Tor</a> must be installed and the <a href="https://manpages.debian.org/testing/tor/torrc.5.en.html">control port 9051</a> will need to be open and configured in <code>/etc/tor/torrc</code>.
+* <a href="https://packages.debian.org/stretch/unzip">unzip</a> is required to extract the Tari binaries.
+* <em>NOTE</em> The Tari suite <code>start_all</code> script requires the <a href="https://www.gnome.org">GNOME</a> desktop environment. This DE is not recommended on this device so the script should be ignored or modified for Raspbian.</p>
+
+</body>
+</html>
