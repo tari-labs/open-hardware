@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style type="text/css">
+td, th { border: 1px solid #c3c3c3; padding: 0 3px 0 3px; }
+table { border-collapse: collapse; }
+img { max-width: 100%; }
+</style>
+<meta name="generator" content="ReText 7.2.3">
+<title>BeagleBone</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+<h1>BeagleBoard.org BeagleBone AI Devices</h1>
+<p><img src="img/beaglebone-ai02.jpg" width="600" /></p>
+<p>BeagleBoard AI models are <a href="https://certification.oshwa.org/us000169.html">certified Open Source Hardware</a> (OSHW). There are two available models of the <a href="https://beagleboard.org/ai">BeagleBone AI</a>: </p>
+<ul>
+<li>
+<p><strong>BeagleBone AI-64:</strong> This small single-board computer has a Texas Instruments TDA4VM chipset (64-bit ARM <a href="https://wiki.debian.org/Arm64Port">arm64</a> architecture).</p>
+</li>
+<li>
+<p><strong>BeagleBone AI (RevA2):</strong> This smaller single-board computer has a Texas Instruments AM5729 chipset (ARMv7 <a href="https://wiki.debian.org/ArmHardFloatPort">armhf</a> architecture).</p>
+</li>
+</ul>
+<h2>BeagleBone AI-64</h2>
+<p><img src="docs_ai-64/beaglebone-ai-64-overview.jpg" width="600" /></p>
+<p><a href="https://beagleboard.org/ai-64">BeagleBone AI-64</a> is a single-board computer (SBC) that provides a complete system with development tools for AI/ML. It utilizes the 64-bit Texas Instruments AM5729 SoC and can be expanded with the BeagleBone cape headers, via hundreds of open-source hardware examples and dozens of CoTS expansion options.</p>
+<h3>Hardware</h3>
+<ul>
+<li><strong>SoC:</strong> Texas Instruments Jacinto TDA4VM, 2x ARM Cortex-A72</li>
+<li><strong>Max CPU clock:</strong> 2 GHz</li>
+<li><strong>Co-processors:</strong> C7x+MMA, 2xC66x, 12xPRU, 6xARM Cortex-R5, PowerVR Rogue 8XE GE8430, H.264 encode, H.264/H.265 decode</li>
+<li><strong>Analog Pins:</strong> 7 (3.3V)</li>
+<li><strong>Digital Pins:</strong> 72 (including 7 analog pins which are digital capable)</li>
+<li><strong>Memory:</strong> 4GB LPDDR4</li>
+<li><strong>Storage:</strong> 16GB eMMC flash, on-board microSD card slot</li>
+<li><strong>USB :</strong> USB 3.0 Type-C 5Gbps, 2x USB 3.0 Type-A Host Ports</li>
+<li><strong>Network:</strong> 1 Gigabit Ethernet M.2, E-key w/ PCIe/USB/SDIO</li>
+<li><strong>Video:</strong> miniDP, MIPI DSI (w/ I2C), Cape add-on boards</li>
+<li><strong>Audio:</strong> miniDP, cape/USB add-ons, MikroBUS Shuttle connector</li>
+<li><strong>Camera:</strong> 2x MIPI CSI (4 lane)</li>
+<li><strong>Supported Expansion Interfaces:</strong> 4x UART, 16-bit LCD interface, 2x I2C, 2x SPI, 8x PWM, 4x Timer, A/D (3.3V), CAN, Pulse Capture, Quadrature Encoder, PRU GPIO, PRU UART, PRU Pulse Capture</li>
+<li><strong>On-board Sensors:</strong> On-die processor temperature sensors</li>
+</ul>
+<h3>Documentation</h3>
+<h4>Vendor</h4>
+<p>BeagleBoard.org publishes a detailed <a href="https://git.beagleboard.org/beagleboard/beaglebone-ai-64/-/tree/main/">git repository</a> with all CAD design files as well as a documentation <a href="https://docs.beagleboard.org/latest/boards/beaglebone/ai-64/">wiki</a>.</p>
+<h4>Community</h4>
+<p>The hardware community around all BeagleBone models is very active on the <a href="https://forum.beagleboard.org">BeagleBoard.org forums</a>. The BeagleBone Google Groups are now <a href="https://forum.beagleboard.org/c/googlegroups/7">archived</a>.</p>
+<h3>Software</h3>
+<h4>Bootloader</h4>
+<p>BeagleBone models use the <a href="https://www.denx.de/wiki/U-Boot">U-Boot</a> bootloader.</p>
+<h4>Operating System</h4>
+<p>BeagleBone models run a <a href="https://debian.org">Debian GNU/Linux</a> derivative. Instructions for flashing and updating the OS <a href="https://docs.beagleboard.org/latest/boards/beaglebone/ai-64/update.html">are available here</a>.</p>
+<h4>Connecting to the Device</h4>
+<p>The system starts the <a href="https://xfce.org">XFCE</a> desktop environment when it boots. The easiest way to access it is by <a href="https://docs.beagleboard.org/latest/boards/beaglebone/ai-64/ch03.html">connecting the device</a> via USB-C.</p>
+<h4>Tari Testing &amp; Compatibility</h4>
+<p>The Tari suite <code>arm64</code> builds for <a href="https://ubuntu.com">Ubuntu</a> will run on the BeagleBoard AI-64.</p>
+<p>Some Debian dependencies must be installed:
+* <a href="https://www.linuxcapable.com/how-to-install-tor-browser-on-debian-11-bullseye/">Tor</a> must be installed and the <a href="https://manpages.debian.org/testing/tor/torrc.5.en.html">control port 9051</a> will need to be open and configured in <code>/etc/tor/torrc</code>.
+* <a href="https://packages.debian.org/stretch/unzip">unzip</a> is required to extract the Tari binaries.
+* <em>NOTE</em> The Tari suite <code>start_all</code> script requires the <a href="https://www.gnome.org">GNOME</a> desktop environment. This DE is not recommended on this device so the script should be ignored or modified for XFCE.</p>
+<p>Instructions: 
+* Download the <code>arm64</code> build of <code>tari_suite</code> from the <a href="https://www.tari.com/downloads/">Tari downloads page</a>.
+* Verify the SHA256 checksum for the file.
+* Copy the ZIP archive to the device and extract the files with <code>unzip</code>.
+* Change the permissions on the Tari binaries to be executable.
+* Run the Tari binaries via the CLI.</p>
+<p>Additional installation instructions are available in the <a href="https://github.com/tari-project/tari/blob/development/README.md">Tari project repositories</a>.</p>
+<p><img src="docs_ai-64/front.png" width="800" /></p>
+<p><img src="docs_ai-64/back.png" width="800" /></p>
+<h2>BeagleBone AI</h2>
+<p><img src="docs_ai/beaglebone-ai-overview.jpg" width="600" /></p>
+<p><a href="https://beagleboard.org/ai">BeagleBone AI</a> is a miniature single-board computer (SBC) based on the Texas Instruments AM5729. The board is compatible with the BeagleBone Black header and most cape accessories. BeagleBone  AI also has an SoC with TI C66x digital-signal-processor (DSP) and embedded-vision-engine (EVE) cores supported through an optimized TIDL machine learning OpenCL API with pre-installed tools.</p>
+<h3>Hardware</h3>
+<ul>
+<li><strong>SoC :</strong> Texas Instruments Sitara AM5729, 2x ARM Cortex-A15</li>
+<li><strong>Max CPU clock:</strong> 1.5 GHz</li>
+<li><strong>Co-processors:</strong> 2xC66x, 4xPRU, 4xARM Cortex-M4, 4xEVE, 2xPowerVR SGX544, IVA-HD</li>
+<li><strong>Analog Pins:</strong> 7 (4-wire touchscreen capable) (3.3V)</li>
+<li><strong>Digital Pins:</strong> 72 (including 7 analog pins which are digital capable)</li>
+<li><strong>Memory:</strong> 1GB DDR3L</li>
+<li><strong>Storage:</strong> 16GB eMMC flash, on-board microSD card slot</li>
+<li><strong>USB:</strong> USB 3.0 Type-C 5Gbps, USB 2.0 Type-A Host Port</li>
+<li><strong>Network:</strong> 1 Gigabit Ethernet, 2.4/5GHz WiFi, Bluetooth 4.2/BLE</li>
+<li><strong>Video:</strong> micro HDMI, Cape add-on boards</li>
+<li><strong>Audio:</strong> micro HDMI, cape/USB add-ons,  Bluetooth</li>
+<li><strong>Camera:</strong> None</li>
+<li><strong>Supported Expansion Interfaces:</strong> 4x UART, 16-bit LCD interface, 2x I2C, 2x SPI, 8x PWM, 4x Timer, A/D (3.3V), CAN, Pulse Capture, Quadrature Encoder, PRU GPIO, PRU UART, PRU Pulse Capture</li>
+<li><strong>On-board Sensors:</strong> On-die processor temperature sensors</li>
+</ul>
+<h3>Documentation</h3>
+<h4>Vendor</h4>
+<p>BeagleBoard.org publishes a detailed <a href="https://github.com/beagleboard/beaglebone-ai">git repository</a> with all <a href="https://www.kicad.org/">KiCad</a> design files as well as a documentation <a href="https://github.com/beagleboard/beaglebone-ai/wiki">wiki</a>.</p>
+<h4>Community</h4>
+<p>The hardware community around all BeagleBone models is very active on the <a href="https://forum.beagleboard.org">BeagleBoard.org forums</a>. The BeagleBone Google Groups are now <a href="https://forum.beagleboard.org/c/googlegroups/7">archived</a>.</p>
+<h3>Software</h3>
+<h4>Bootloader</h4>
+<p>BeagleBone models use the <a href="https://www.denx.de/wiki/U-Boot">U-Boot</a> bootloader.</p>
+<h4>Operating System</h4>
+<p>BeagleBone models run a <a href="https://debian.org">Debian GNU/Linux</a> derivative. Instructions for flashing and updating the OS <a href="https://docs.beagleboard.org/latest/boards/beaglebone/ai/ch02.html">are available here</a>.</p>
+<h4>Connecting to the Device</h4>
+<p>The system starts a Web configuration interface when it boots. The easiest way to access it is by <a href="https://docs.beagleboard.org/latest/boards/beaglebone/ai/ch03.html">connecting the device</a> via USB-C, opening a Web browser, and following the <a href="https://beagleboard.org/getting-started#step3">instructions here</a>.</p>
+<p>When you connect to the device, you will be presented with the on-board filesystem as in the screenshot below.  Open <code>START.HTM</code> in your browser to view instructions for updating the firmware, updating Debian, and other maintenance of the device.</p>
+<p><img src="docs_ai-64/beaglebone-filesystem.png" width="600" /></p>
+<p>The on-board filesystem for the BeagleBoard AI-64 is very small and you will need to format a microSD card (recommended at least 32GB) to copy and run the Tari binaries.</p>
+<h4>Tari Testing &amp; Compatibility</h4>
+<p>The Tari project does not provide builds for the <code>armhf</code> architecture, so the Tari suite must be compiled from source on the BeagleBoard AI.</p>
+<p>Instructions for compiling from source are available in the <a href="https://github.com/tari-project/tari/blob/development/README.md">Tari project repositories</a>.</p>
+<p>Some Debian dependencies also must to be installed: 
+* <a href="https://www.linuxcapable.com/how-to-install-tor-browser-on-debian-11-bullseye/">Tor</a> must be installed and the <a href="https://manpages.debian.org/testing/tor/torrc.5.en.html">control port 9051</a> will need to be open and configured in <code>/etc/tor/torrc</code>.
+* <a href="https://packages.debian.org/stretch/unzip">unzip</a> is required to extract the Tari binaries.
+* <em>NOTE</em>: The Tari suite <code>start_all</code> script requires the <a href="https://www.gnome.org">GNOME</a> desktop environment. A GUI is not recommended on this device so the script should be ignored.</p>
+<p><img src="docs_ai/reva1-top.svg" width="800" /></p>
+<p><img src="docs_ai/reva1-bottom.svg" width="800" /></p>
+
+</body>
+</html>
