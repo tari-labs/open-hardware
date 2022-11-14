@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style type="text/css">
+td, th { border: 1px solid #c3c3c3; padding: 0 3px 0 3px; }
+table { border-collapse: collapse; }
+img { max-width: 100%; }
+</style>
+<meta name="generator" content="ReText 7.2.3">
+<title>FSF-RYF</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+<h1>Free Software Foundation "Respects Your Freedom" Devices</h1>
+<p>Tari believes in testing on hardware certified by the <a href="https://www.fsf.org">Free Software Foundation</a> (FSF) as <a href="https://ryf.fsf.org">Respects Your Freedom</a> (RYF). The RYF certification program encourages the creation and sale of hardware that accomplishes as much as possible to respect freedom, privacy, and control over devices. This means <a href="https://en.wikipedia.org/wiki/Free_software">Free Software</a> from the BIOS on up.</p>
+<h2>Thinkpad T500</h2>
+<p><img src="img/libreboot-thinkpad-t500-01.jpg" width="400" /></p>
+<p>Many Lenovo Thinkpad models (often branded IBM) released over the past two decades are certified RYF due to their lack of proprietary firmware requirements and the ability to flash the BIOS with the Free Software replacement <a href="https://libreboot.org/">LibreBoot</a>. Tari is currently testing on the Thinkpad T500 model, but the information below largely applies to all Thinkpad models listed on <a href="https://ryf.fsf.org/index.php/categories/laptops">this wiki</a>.</p>
+<h3>Documentation</h3>
+<p>Information about RYF Thinkpad models is <a href="https://ryf.fsf.org/index.php/categories/laptops">published by the FSF</a>.</p>
+<h3>Software</h3>
+<h4>Bootloader</h4>
+<p>The BIOS is <a href="https://libreboot.org/">LibreBoot</a> on models purchased from <a href="https://ryf.fsf.org/index.php/categories/laptops">RYF-approved vendors</a> such as Technoethical, Taurinus, and Vikings. Otherwise the BIOS must be <a href="https://libreboot.org/docs/hardware/t500.html">flashed manually</a>.</p>
+<h4>Operating System</h4>
+<p>Models purchased from <a href="https://ryf.fsf.org/index.php/categories/laptops">RYF-approved vendors</a> ship with an <a href="https://ubuntu.com">Ubuntu</a> derivative called <a href="https://trisquel.info/">Trisquel GNU/Linux</a></p>
+<p><img src="img/trisquel01.jpg" width="800" /></p>
+<h4>Connecting to the Device</h4>
+<p>The system starts the Trisquel <a href="https://lxde.org">LXDE</a> desktop environment when it boots.</p>
+<h4>Tari Testing &amp; Compatibility</h4>
+<p>The Tari suite <code>x86_64</code> builds for <a href="https://ubuntu.com">Ubuntu</a> will run on the Thinkpad T500 with Trisquel.</p>
+<p>Some Ubuntu dependencies must be installed:
+* <a href="https://www.linuxcapable.com/how-to-install-tor-browser-on-debian-11-bullseye/">Tor</a> must be installed and the <a href="https://manpages.debian.org/testing/tor/torrc.5.en.html">control port 9051</a> will need to be open and configured in <code>/etc/tor/torrc</code>.
+* <em>NOTE</em> The Tari suite <code>start_all</code> script requires the <a href="https://www.gnome.org">GNOME</a> desktop environment. This DE is not recommended on this device so the script should be ignored or modified for Trisquel.</p>
+<p>Instructions: 
+* Download the <code>x86_64</code> build of <code>tari_suite</code> from the <a href="https://www.tari.com/downloads/">Tari downloads page</a>.
+* Verify the SHA256 checksum for the file.
+* Copy the ZIP archive to the device and extract the files with <code>unzip</code>.
+* Change the permissions on the Tari binaries to be executable.
+* Run the Tari binaries via the CLI.</p>
+<p><img src="img/trisquel-tari01.jpg" width="800" /></p>
+
+</body>
+</html>

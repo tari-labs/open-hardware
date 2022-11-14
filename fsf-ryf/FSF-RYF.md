@@ -22,6 +22,8 @@ The BIOS is [LibreBoot](https://libreboot.org/) on models purchased from [RYF-ap
 
 Models purchased from [RYF-approved vendors](https://ryf.fsf.org/index.php/categories/laptops) ship with an [Ubuntu](https://ubuntu.com) derivative called [Trisquel GNU/Linux](https://trisquel.info/)
 
+<img src="img/trisquel01.jpg" width="800" />
+
 #### Connecting to the Device
 
 The system starts the Trisquel [LXDE](https://lxde.org) desktop environment when it boots.
@@ -40,4 +42,7 @@ Instructions:
 * Copy the ZIP archive to the device and extract the files with `unzip`.
 * Change the permissions on the Tari binaries to be executable.
 * Run the Tari binaries via the CLI.
+
+<img src="img/trisquel-tari01.jpg" width="800" />
+
 
