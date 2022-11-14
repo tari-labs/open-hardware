@@ -4,7 +4,7 @@ Tari believes in testing on hardware certified by the [Free Software Foundation]
 
 ## Thinkpad T500
 
-<img src="img/libreboot-thinkpad-t500-01.jpg" width="400" />
+<img src="img/trisquel-tari01.png" width="800" />
 
 Many Lenovo Thinkpad models (often branded IBM) released over the past two decades are certified RYF due to their lack of proprietary firmware requirements and the ability to flash the BIOS with the Free Software replacement [LibreBoot](https://libreboot.org/). Tari is currently testing on the Thinkpad T500 model, but the information below largely applies to all Thinkpad models listed on [this wiki](https://ryf.fsf.org/index.php/categories/laptops).
 
@@ -16,13 +16,15 @@ Information about RYF Thinkpad models is [published by the FSF](https://ryf.fsf.
 
 #### Bootloader
 
+<img src="img/libreboot-thinkpad-t500-01.jpg" width="400" />
+
 The BIOS is [LibreBoot](https://libreboot.org/) on models purchased from [RYF-approved vendors](https://ryf.fsf.org/index.php/categories/laptops) such as Technoethical, Taurinus, and Vikings. Otherwise the BIOS must be [flashed manually](https://libreboot.org/docs/hardware/t500.html).
 
 #### Operating System
 
 Models purchased from [RYF-approved vendors](https://ryf.fsf.org/index.php/categories/laptops) ship with an [Ubuntu](https://ubuntu.com) derivative called [Trisquel GNU/Linux](https://trisquel.info/)
 
-<img src="img/trisquel01.jpg" width="800" />
+<img src="img/trisquel01.png" width="800" />
 
 #### Connecting to the Device
 
@@ -42,7 +44,4 @@ Instructions:
 * Copy the ZIP archive to the device and extract the files with `unzip`.
 * Change the permissions on the Tari binaries to be executable.
 * Run the Tari binaries via the CLI.
-
-<img src="img/trisquel-tari01.jpg" width="800" />
-
 
