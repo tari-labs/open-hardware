@@ -31,15 +31,81 @@ img { max-width: 100%; }
 <p>The system starts the Trisquel <a href="https://lxde.org">LXDE</a> desktop environment when it boots.</p>
 <h4>Tari Testing &amp; Compatibility</h4>
 <p>The Tari suite <code>x86_64</code> builds for <a href="https://ubuntu.com">Ubuntu</a> will run on the Thinkpad T500 with Trisquel.</p>
-<p>Some Ubuntu dependencies must be installed:
-* <a href="https://www.linuxcapable.com/how-to-install-tor-browser-on-debian-11-bullseye/">Tor</a> must be installed and the <a href="https://manpages.debian.org/testing/tor/torrc.5.en.html">control port 9051</a> will need to be open and configured in <code>/etc/tor/torrc</code>.
-* <em>NOTE</em> The Tari suite <code>start_all</code> script requires the <a href="https://www.gnome.org">GNOME</a> desktop environment. This DE is not recommended on this device so the script should be ignored or modified for Trisquel.</p>
-<p>Instructions: 
-* Download the <code>x86_64</code> build of <code>tari_suite</code> from the <a href="https://www.tari.com/downloads/">Tari downloads page</a>.
-* Verify the SHA256 checksum for the file.
-* Copy the ZIP archive to the device and extract the files with <code>unzip</code>.
-* Change the permissions on the Tari binaries to be executable.
-* Run the Tari binaries via the CLI.</p>
+<ul>
+<li><strong>Tested build:</strong> [tari_suite-0.39.0-1b980b0-linux-x86_64.zip](https://tari-binaries.s3.amazonaws.com/current/linux/tari_suite-0.43.1-aecafb8-linux-arm64.zip](tari_suite-0.39.0-1b980b0-linux-x86_64.zip) (November 2022)</li>
+</ul>
+<h4>Getting Started</h4>
+<ul>
+<li>Download the <code>x86_64</code> build of <code>tari_suite</code> for Ubuntu from the <a href="https://www.tari.com/downloads/">Tari downloads page</a>.</li>
+<li>Verify the SHA256 checksum for the file.</li>
+<li>Copy the ZIP archive to the device and extract the files with <code>unzip</code>.</li>
+<li>Change the permissions on the Tari binaries to be executable.</li>
+<li>
+<p>Run the Tari binaries via the CLI.</p>
+</li>
+<li>
+<p><em>NOTE</em> The Tari suite <code>start_all</code> script requires the <a href="https://www.gnome.org">GNOME</a> desktop environment. This DE is not recommended on this device so the script should be ignored or modified for Trisquel.</p>
+</li>
+</ul>
+<h5>Dependencies</h5>
+<p>Tor is a dependency for Tari. It is installed on Trisquel by default. <a href="https://manpages.debian.org/testing/tor/torrc.5.en.html">Control port 9051</a> will need to be open and configured in <code>/etc/tor/torrc</code> before the <code>start_tor.sh</code> script included with tari will run without errors. You may also run this command in the terminal: </p>
+<p><code>tor --allow-missing-torrc --ignore-missing-torrc --clientonly 1 --socksport 9050 --controlport 127.0.0.1:9051 --log "warn stdout" --clientuseipv6 1</code></p>
+<p>Remember to stop any currently-running instances of the tor daemon before doing so.</p>
+<h5>Tari Base Node</h5>
+<p>To start the Tari Base Node, execute the <code>tari_base_node</code> binary.</p>
+<p>Commands: </p>
+<ul>
+<li>version</li>
+<li>check-for-updates</li>
+<li>status</li>
+<li>get-chain-metadata</li>
+<li>get-db-stats</li>
+<li>get-peer</li>
+<li>list-peers</li>
+<li>dial-peer</li>
+<li>ping-peer</li>
+<li>reset-offline-peersrewind-blockchain</li>
+<li>add-peer</li>
+<li>ban-peer</li>
+<li>unban-peer</li>
+<li>unban-all-peers</li>
+<li>list-banned-peers</li>
+<li>list-connections</li>
+<li>list-headers</li>
+<li>check-db</li>
+<li>period-stats</li>
+<li>header-stats</li>
+<li>block-timing</li>
+<li>list-reorgs</li>
+<li>discover-peer</li>
+<li>get-block</li>
+<li>search-utxo</li>
+<li>search-kernel</li>
+<li>get-mempool-stats</li>
+<li>get-mempool-state</li>
+<li>get-mempool-tx</li>
+<li>whoami</li>
+<li>get-state-info</li>
+<li>get-network-stats</li>
+<li>watch</li>
+<li>quit</li>
+<li>exit</li>
+</ul>
+<h5>Tari Console Wallet</h5>
+<p>To start the Tari Console Wallet, execute the <code>tari_console_wallet</code> binary.</p>
+<p>Options: </p>
+<ol>
+<li>Create a new wallet.</li>
+<li>Recover wallet from seed words.</li>
+</ol>
+<p>You will be prompted to either create a new wallet and strong password for that wallet or recover an existing wallet from 24 seed words.</p>
+<ul>
+<li><strong>IMPORTANT:</strong> Keep your wallet seed words in a safe place such as writing them down on paper. They are the only way to recover your wallet and funds and will only be displayed <strong>once</strong>.</li>
+</ul>
+<h5>Tari Miner</h5>
+<p>To start the Tari Miner, execute the <code>tari_miner</code> binary.</p>
+<p>Ports 18141, 18142, and 18143 must be open to TCP traffic on <code>localhost</code> 127.0.0.1 for the miner to connect to the base node and wallet. These ports will need to be opened in the firewall using, for example, <code>iptables</code> or <code>ufw</code>. There is no graphical firewall application installed by default on Trisquel. <code>gufw</code> can be installed via <code>apt</code>: </p>
+<p><code>sudo apt-get install gufw</code></p>
 
 </body>
 </html>
